@@ -1,0 +1,96 @@
+@import _mixins
+@font-face
+    font-family: 'ROBOTO SLAB'
+    src: url('../fonts/RobotoSlab-Regular.eot')
+    src: local('☺'), url('../fonts/RobotoSlab-Regular.woff') format('woff'), url('../fonts/RobotoSlab-Regular.ttf') format('truetype'), url('../fonts/RobotoSlab-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'PT SERIF'
+    src: url('../fonts/PtSerif-Regular.eot')
+    src: local('☺'), url('../fonts/PtSerif-Regular.woff') format('woff'), url('../fonts/PtSerif-Regular.ttf') format('truetype'), url('../fonts/PtSerif-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+body
+    +body()
+button
+    +all-buttons()
+header
+    +flex-column-align-items-center-justify-content-space-evenly(100%,200px,black)
+    flex-direction: row
+.header__logo
+    +font(50px,ROBOTO SLAB,auto,orange)
+    cursor: pointer
+.header__lang
+    +buttons(30px,white,PT SERIF,#383232,100px,50px)
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: 500ms
+.header__lang:hover
+    background: #211c1c
+.tabs-btn-active
+    background: #211c1c
+main
+    +flex-column-align-items-center-justify-content-space-evenly(100%,700px,#171515)
+    text-align: center
+.main__tabs-content
+    +font(22px,PT SERIF,auto,white)
+    display: none
+.tabs-item-active
+    display: inline
+.main__slider
+    +flex-justify-content-space-between(75%,45%,none)
+    align-items: center
+    flex-direction: column
+.main__slider-upper
+    +flex-justify-content-space-between(80%,85%,none)
+.main__slider-upper-prev-btn
+    +flex-column-align-items-center-justify-content-space-evenly(7%,100%,black)
+    justify-content: center
+    flex-direction: row
+    +font(22px,Open Sans,auto,white)
+    cursor: pointer
+    transition: 500ms
+.main__slider-upper-prev-btn:hover
+    background: #211c1c
+.main__slider-upper-track
+    +block(80%,100%)
+    display: block
+    position: relative
+.main__slider-upper-track-img
+    +block(100%,100%)
+    object-fit: cover
+    display: block
+    position: absolute
+    z-index: -1
+    opacity: 0
+    transition: opacity 2s
+.slider-active
+    z-index: 0
+    opacity: 1
+.main__slider-upper-next-btn
+    +flex-column-align-items-center-justify-content-space-evenly(7%,100%,black)
+    justify-content: center
+    flex-direction: row
+    +font(22px,Open Sans,auto,white)
+    cursor: pointer
+    transition: 500ms
+.main__slider-upper-next-btn:hover
+    background: #211c1c
+.main__slider-dots
+    +flex-justify-content-space-between(100%,10%,none)
+.main__slider-dots-item
+    +flex-justify-content-space-between(8%,100%,transparent)
+    justify-content: center
+    align-items: center
+    border: 3px solid white
+.main__slider-dots-item-index
+    +block(80%,80%)
+    display: block
+    background: white
+    opacity: 0
+    transition: opacity 500ms
+.dots-active
+    opacity: 1

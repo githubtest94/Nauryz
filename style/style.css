@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ROBOTO SLAB";
+  src: url("../fonts/RobotoSlab-Regular.eot");
+  src: local("☺"), url("../fonts/RobotoSlab-Regular.woff") format("woff"), url("../fonts/RobotoSlab-Regular.ttf") format("truetype"), url("../fonts/RobotoSlab-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT SERIF";
+  src: url("../fonts/PtSerif-Regular.eot");
+  src: local("☺"), url("../fonts/PtSerif-Regular.woff") format("woff"), url("../fonts/PtSerif-Regular.ttf") format("truetype"), url("../fonts/PtSerif-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: black;
+  flex-direction: row;
+}
+
+.header__logo {
+  font-size: 50px;
+  font-family: ROBOTO SLAB;
+  line-height: auto;
+  color: orange;
+  cursor: pointer;
+}
+
+.header__lang {
+  font-size: 30px;
+  color: white;
+  font-family: PT SERIF;
+  background: #383232;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.header__lang:hover {
+  background: #211c1c;
+}
+
+.tabs-btn-active {
+  background: #211c1c;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background: #171515;
+  text-align: center;
+}
+
+.main__tabs-content {
+  font-size: 22px;
+  font-family: PT SERIF;
+  line-height: auto;
+  color: white;
+  display: none;
+}
+
+.tabs-item-active {
+  display: inline;
+}
+
+.main__slider {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  height: 45%;
+  background: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__slider-upper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 85%;
+  background: none;
+}
+
+.main__slider-upper-prev-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 7%;
+  height: 100%;
+  background: black;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 22px;
+  font-family: Open Sans;
+  line-height: auto;
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.main__slider-upper-prev-btn:hover {
+  background: #211c1c;
+}
+
+.main__slider-upper-track {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  display: block;
+  position: relative;
+}
+
+.main__slider-upper-track-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.slider-active {
+  z-index: 0;
+  opacity: 1;
+}
+
+.main__slider-upper-next-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 7%;
+  height: 100%;
+  background: black;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 22px;
+  font-family: Open Sans;
+  line-height: auto;
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.main__slider-upper-next-btn:hover {
+  background: #211c1c;
+}
+
+.main__slider-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  background: none;
+}
+
+.main__slider-dots-item {
+  display: flex;
+  justify-content: space-between;
+  width: 8%;
+  height: 100%;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+}
+
+.main__slider-dots-item-index {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  flex-direction: column;
+  display: block;
+  background: white;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.dots-active {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

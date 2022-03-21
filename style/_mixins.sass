@@ -1,0 +1,59 @@
+=body()
+    margin: 0 auto
+=size($width,$height)
+    width: $width
+    height: $height
+=flex-justify-content-space-between($width,$height,$background)
+    display: flex
+    justify-content: space-between
+    width: $width
+    height: $height
+    background: $background
+=flex-column-align-items-center-justify-content-space-evenly($width,$height,$background)
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    width: $width
+    height: $height
+    background: $background
+=all-links()
+    text-decoration: none
+=links($font-size,$font-family,$color,$line-height)
+    font-size: $font-size
+    font-family: $font-family
+    color: $color
+    line-height: $line-height
+=all-buttons()
+    outline: none
+    border: none
+=buttons($font-size,$color,$font-family,$background,$width,$height)
+    font-size: $font-size
+    color: $color
+    font-family: $font-family
+    background: $background
+    width: $width
+    height: $height
+=block($width,$height)
+    display: flex
+    justify-content: space-between
+    width: $width
+    height: $height
+    align-items: center
+    flex-direction: column
+=input($width,$height,$font-size,$font-family,$line-height,$color)
+    outline: none
+    border: none
+    text-align: center
+    background: transparent
+    width: $width
+    height: $height
+    font-size: $font-size
+    font-family: $font-family
+    line-height: $line-height
+    color: $color
+=font($font-size,$font-family,$line-height,$color)
+    font-size: $font-size
+    font-family: $font-family
+    line-height: $line-height
+    color: $color
